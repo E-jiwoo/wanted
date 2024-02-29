@@ -1,5 +1,6 @@
 import React from "react";
 import * as S from "./style";
+import check from "../../assets/check.svg";
 
 const index = ({ todos }) => {
   return (
@@ -7,7 +8,10 @@ const index = ({ todos }) => {
       {todos.map((todo) => (
         <S.List key={todo.id}>
           <S.Box>
-            <S.Text>{todo.text}</S.Text>
+            <S.Text>
+              <S.Icon src={check} />
+              {todo.text}
+            </S.Text>
           </S.Box>
         </S.List>
       ))}

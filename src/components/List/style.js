@@ -17,6 +17,17 @@ export const Box = styled.div`
 export const Text = styled.div`
   display: flex;
   justify-content: center;
-  padding: 15px;
+  padding: 16px;
   color: white;
+`;
+
+export const Icon = styled.img`
+  position: relative;
+  bottom: 4px;
+  padding-right: 10px;
+  cursor: pointer;
+
+  &:hover {
+    filter: invert(50%);
+  }
 `;
