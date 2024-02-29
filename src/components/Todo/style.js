@@ -31,16 +31,3 @@ export const AddBtn = styled.button`
   border-color: white;
   font-size: 17px;
 `;
-
-export const List = styled.div`
-  position: absolute;
-  left: 200px;
-  bottom: 400px;
-  width: 150px;
-  height: 50px;
-  color: white;
-  border-color: white;
-  border-radius: 8px;
-  background-color: black;
-  font-size: 17px;
-`;
