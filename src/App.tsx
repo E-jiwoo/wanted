@@ -1,4 +1,5 @@
-import Todo from "./components/Todo/index";
+import React from "react";
+import Todo from "./components/Todo/index.jsx";
 import { createGlobalStyle } from "styled-components";
 
 function App() {

@@ -37,6 +37,10 @@ const Index = () => {
     }
   };
 
+  const onRemove = (id) => {
+    setTodos(todos.filter((todo) => todo.id !== id));
+  };
+
   return (
     <>
       <S.Background />
@@ -46,10 +50,10 @@ const Index = () => {
         placeholder="input"
         onChange={(e) => setText(e.target.value)}
       />
-      <S.AddBtn types="submit" onClick={onClick}>
+      <S.AddBtn type="submit" onClick={onClick}>
         Add
       </S.AddBtn>
-      <List todos={todos} />
+      <List todos={todos} onRemove={onRemove} />
     </>
   );
 };

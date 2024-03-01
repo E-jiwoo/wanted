@@ -7,8 +7,8 @@ export const List = styled.div`
 export const Box = styled.div`
   display: inline-block;
   position: relative;
-  left: 200px;
-  bottom: 400px;
+  left: 195px;
+  bottom: 450px;
   height: 50px;
   border: 2px solid white;
   border-radius: 8px;
